@@ -7,9 +7,9 @@ The data dashboard challenge for the Winter 2026 BDATA 412 Advanced Data Visuali
 
 -   📊 Challenge created by and made for the BDATA 412 [Advanced Data Visualization](https://github.com/UWB-Adv-Data-Vis) course at the [University of Washington Bothell](https://www.uwb.edu/).
 
--   ✍️ Authored by [Eric H. K.](https://github.com/), [Richard J.](https://github.com/), [Minh T.](https://github.com/), and [Sean N.](https://github.com/).
+-   ✍️ Authored by [Eric H. K.](https://github.com/EricKim117), [Richard J.](https://github.com/), [Minh T.](https://github.com/), and [Sean N.](https://github.com/sn2050-commits).
 
--   🔍 Challenge review committee: [Name](link)
+-   🔍 Challenge review committee: [Sophia W.](https://github.com/sophiawalters) (Chair), [Nikolai D.](https://github.com/NikolaiDecneut), [Aiden W.](https://github.com/aidenwal21), [Jeffery C.] , [Debbie]
 
 -   🛠️ Edited and supervised by Prof. [Caleb Trujillo](https://github.com/calebtru).
 ### Learning Objectives
