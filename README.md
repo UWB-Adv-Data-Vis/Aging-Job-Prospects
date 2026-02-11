@@ -132,7 +132,7 @@ This then lets management teams have a more informed idea of the teams they wish
 These data sets are all summarized data from another source, as they are all tables of counts. Known limitations here are that they may have under or over- representation. Occupation categories could also be too general and cover very different fields. There is missing data in the data sets  in the median age column, represented by dashes. There are accessible notes at the bottom to explain what median age means and the dash (“-”) indicates that there is no data. There are quite a bit of papers specifically on the data taken from theUS Bureau of Labor and Statistics. 
  
 Research Papers: 
-[https://www.bls.gov/osmr/research-papers/]  
+[https://www.bls.gov/osmr/research-papers/](https://www.bls.gov/osmr/research-papers/)  
 
 
 ### *Dataset: *
