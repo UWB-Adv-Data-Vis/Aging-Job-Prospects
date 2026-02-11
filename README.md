@@ -135,7 +135,7 @@ Research Papers:
 [https://www.bls.gov/osmr/research-papers/](https://www.bls.gov/osmr/research-papers/)  
 
 
-### *Dataset: *
+### Dataset:
 
 The data source that we will be using is from the U.S. Bureau of Labor Statistics for Labor Force, we will be looking at the annual average years from 2011 to 2024 dataset of 11b. Employed persons by detailed occupation and age. This range attempts to capture the different trends of more than a decade of labor market dynamics from the Great Recession recovery, COVID-19, and now the current labor market restructuring. The dataset is split between management/professional occupations and service occupations, spanning over 300 occupations combined, each is a table. 
  
