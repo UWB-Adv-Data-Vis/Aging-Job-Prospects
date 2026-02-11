@@ -1,15 +1,15 @@
-# CostlyLiving
-The Cost of Living: Gross Rent as a Percentage of Household Income in the United States
+# Aging Job Prospects
+Aging Job Prospects: The Employment Age Matrix, Forecasting the Uncertain Future
 
-The data dashboard challenge for the Autumn 2025 BIS 412 Advanced Data Visualization course with Prof. Trujillo. The challenge uses data from the U.S. Census Bureau American Community Survey (ACS) to develop interactive data visualizations to illumniate patterns in the the rising cost of living.
+The data dashboard challenge for the Winter 2026 BDATA 412 Advanced Data Visualization course with Prof. Trujillo. The challenge uses data from the U.S. Bureau of Labor  Statistics for Labor Force (BLS) to develop interactive data visualizations to illumniate patterns in the labor force age across occupation.
 
 ### Team
 
 -   📊 Challenge created by and made for the BDATA 412 [Advanced Data Visualization](https://github.com/UWB-Adv-Data-Vis) course at the [University of Washington Bothell](https://www.uwb.edu/).
 
--   ✍️ Authored by [Anum R.N.K.](https://github.com/AnumRNK04) and [Laila O.](https://github.com/Laila273)
+-   ✍️ Authored by [Eric H. K.](https://github.com/), [Richard J.](https://github.com/), [Minh T.](https://github.com/), and [Sean N.](https://github.com/).
 
--   🔍 Challenge review committee: [Anum R.N.K.](https://github.com/AnumRNK04), [Albany G.](https://github.com/Albanygarciag), [Dylan W](https://github.com/dwuu10), [Ryan M.](https://github.com/glfmoch), [Marcus L.](https://github.com/marcusxli), [Sebastain T.](https://github.com/Sthors7), [Nuhshire J.](https://github.com/Nuhshire), [James C.](https://github.com/sudo-uwjames),and [Aiden L.](https://github.com/aidenluo04)
+-   🔍 Challenge review committee: [Name](link)
 
 -   🛠️ Edited and supervised by Prof. [Caleb Trujillo](https://github.com/calebtru).
 ### Learning Objectives
@@ -24,43 +24,23 @@ In this assignment you will demonstrate your ability to:
 *    Describe and use different types of critical and scientific thinking to develop inquiry into selected projects and critique visualizations.
 
 ## Overview
-This project looks at data from the U.S. Census Bureau's 2023 survey, specifically how much of their income renters spend on housing. The data shows what percentage of income people pay for rent and utilities across all U.S. states.
-
-Housing costs have become a major sign of inequality in America.
-Housing costs have risen faster than wages in most U.S. markets over the past twenty years.
-The COVID-19 pandemic made many of these trends worse, with remote work changing where
-people live and increasing competition in some housing markets. Recent data shows that nearly
-half of American renters are cost-burdened, with low-income households facing the biggest
-challenges. This crisis affects people's ability to move up economically, their health, and their
-quality of life.
-Many families now spend more than 30% of their income on rent. The U.S. Department of Housing and Urban Development calls this being "*rent burdened*." When households spend 50% or more, they are "*severely rent burdened*."
-
-This challenge asks teams to turn complex census data into a clear, easy-to-use dashboard using R Shiny and ggplot2. The dashboard should help users see how rent burdens differ by location.
-
-
+This data challenge directly addresses the concerns of the future labor market in relation to previous trends. This project examines data from the U.S. Labor Bureau spanning between 2011-2024 to portray the ages that workers joining and leaving the workforce across different occupations. 
 
 ## Intent of the Dashboard
-The dashboard will help users explore the data and find information. Users should be able to quickly see which states have the biggest rent problems, understand regional patterns, and see how inequality shows up in housing costs. The dashboard will show patterns in the data while giving enough background for users to understand housing affordability in different areas.
+The dashboard is intended to clearly present occupational employment trends by age and to provide insights into historical patterns, structural shifts, industry trends, and automation impacts, helping to inform policymakers and analysts through evidence-based decision-making. It functions as a supplemental resource to enable users to compare the different occupation performance across age groups.
 
 ## Data Challenge Statement
-Housing costs have become one of the most visible indicators of inequality in the United States. Many families now spend more than 30% of their income on rent, a level defined by the U.S. Department of Housing and Urban Development as “*rent burdened*.”
-
-The challenge is to transform large and complex ACS datasets into a clear, intuitive, and interactive dashboard that helps users explore how rent burdens vary by state and change over time. This requires effective data wrangling, careful normalization (to adjust for inflation and income changes), and thoughtful visual design to avoid misrepresentation.
+This challenge asks teams to turn complex labor data into a clear, easy-to-use dashboard using R Shiny and ggplot2. We intend the dashboards to be accessible and understandable to the general public, prioritizing creative layouts, clear labeling, and clear data storytelling so that it enables non-technical users to engage with the visualizations meaningfully. By making the dashboard easily accessible to the public, it will provide a good reference for students or any public stakeholders trying to understand the trends of labor markets. 
 
 ### Why This Challenge Matters:
- - Housing affordability affects millions of Americans' quality of life and financial security
- - Rent burden has gotten much worse in recent years
- - Complex census data needs to be turned into visuals that everyone can understand
- - Understanding geographic patterns can help guide policy decisions
+These employment numbers helps users to identify emerging trends and risks in different age groups while helping to develop better policy interventions, economic planning, and potential workforce incentives strategies. 
 
 ### What We Hope to Learn:
- - Which states and regions have the worst rent affordability problems
- - How rent burden connects to other economic factors
- - Whether there are surprising patterns that go against common assumptions
- - How well data visualization can explain complex social issues
+The dashboard will help users explore the data and find information. Users should be able to quickly see which states have the biggest rent problems, understand regional patterns, and see how inequality shows up in housing costs. The dashboard will show patterns in the data while giving enough background for users to understand housing affordability in different areas.
 
 ## Purpose 
-To visually communicate rent affordability across the U.S. through clear visuals and encourage discussion about the housing crisis.
+
+
 
 ## Stakeholders:
  - Policymakers and city planners working on housing policies
@@ -71,129 +51,118 @@ To visually communicate rent affordability across the U.S. through clear visuals
 
 ## Targeted Questions for Visual Analytics
 
-The dashboard could answer these key questions through visuals:
- 1. **State Comparison**: Which U.S. states have the highest and lowest percentages of renters spending 30% or more of their income on rent? Which states have the most severly burdened residence(50% or more)?
- 2. **Regional Patterns**: How does rent burden vary by U.S. region (West, South, Midwest, Northeast)? Are there clear geographic clusters?
- 3. **Distribution Analysis**: What is the full breakdown of rent burden across states? How many renters fall into each category (0-20%, 20-30%, 30-40%, 40-50%, 50% or more)?
- 4. **Economic Relationships**: What patterns show up when comparing state-level rent burden to median household income? Do higher-income states have lower rent burdens, or is it more complicated?
- 5. **Ranking**: Can users quickly identify the top 10 most and least affordable states for
-renters?
- 6. **Factor**: What are underlying factors that might explain the variation in rent burden? For example, does the age of state impact the rates? How do political patterns explain trends?
- 7. **Time**: How has rent burden changed over time and for which regions?
- 8. **Inflation**: How do estimates of inflation rates relate to the patterns observed?
-
+The dashboard _could_ answer these key questions through visuals:
+ 1.	What are the entry age groups for different occupations?
+ 2.	Peak years for occupations? Peak being defined as salary earned to hours worked
+ 3.	Retirement years for occupations?
+ 4.	Unemployment by occupation and unemployment?
+ 6.	Is gen-z screwed with their employment opportunities in the current job market?
+ 7.	Which generation(s) are projected to never retire? 
 
 ## Design Principles:
- - Keep it simple but informative: focus on 1-2 strong visualizations per person/tab
- - Clear labels, details-demand, and notes for more information
- - Same color scheme across all panels
- - Works on different screen sizes
- - Follow ggplot2 best practices
- - Please replace this README with one for your produced dashboard and include alink to the original challenge.
+ - Simplify: Keep it simple but informative: focus on 1-2 strong visualizations per person.
+ - Easy: Leverage the use of easy to use tabs and menus to support mobile devices.
+ - Clean: Clear labels, details-demand, and notes for more information
+ - Coherent: Same color scheme across all panels
+ - Flexible: Works on different screen sizes including desktops, phones, tablets, and laptops.
+ - Understandable: Follow ggplot2 best practices
+ - **_Please replace this README with one for your produced dashboard and include a link to the original challenge._**
 
 ## Project Plan:
 Week-phase planned tasks with goals are listed.
 
 ### Week 1 –
 Design, Ideation, and Planning
- - Review data structure and assign roles
- - Brainstorm research questions
- - Sketch dashboard layout
- - Download and inspect ACS B25070 data 
+ - Orient: Practice group commits, branching, merging, and writing issues.
+ - Plan: Plan the workflow by setting assign tasks, creating *issues*, and exploring project development tools
+ - Gather: Download and inspect BLS data, consider R packages best suited for the job.
+ - Review: Review data structure and assign roles
+ - Prepare: Search for R packages to preprocess/tidy data into a useful format  
+ - Ideation: Brainstorm research questions
+ - Design: Sketch dashboard layout onto paper
+ - Assign: Set goals related for members contribute between class.
 
-Goal: Finalized dataset and clear dashboard objectives
+Goal: Finalized dataset, clear dashboard objectives, achievable member-specific tasks assigned. 
 
 ### Week 2 –
 Prototype, Testing, Concepts
- - Create first draft visuals (ggplot charts, tables)
- - Refine labels, titles, and axes
- - Compare map and bar chart options
- - Develop layout
-
-Goal: Prototype visuals ready for peer review
+ - Orient: Revisit group commits and branches, merge and update issues as necessary.
+ - Wrangle: Performing necessary cleaning and refining of the data.
+ - Analysis: Conduct a first layer of analysis as needed.Visualize: Create first draft visuals (ggplot charts, tables), each member is accountable for an original creation.
+ - Evaluate: Judge the overall accessibility of the rough drafts
+ - Discuss: Get feedback from peers
+ - Compare: Consider alternative and creative visualization options
+ - Modify: Interatively refine plots, labels, titles, and axes
+ - Layout: Begin a template dash layout based on best sketches
+ - Plan: Create new issues for project management
+ 
+Goal: Prototype visuals through peer review, test member-specific contributions, template Shiny layout
 
 ### Week 3 –
 Build, Coding, and Refinement
- - Process and summarize data
- - Add filters for year and state
- - Check for errors and debug
+ - Orient: Revisit group commits and branches, merge and update issues as necessary.
+ - Layout: Develop the dashboard components
+ - Produce: Place visualizations in approporiate sections of the visual
+ - Format: Check formating issues across platforms
+ - Tidy: Review and further streamline the processing and summarize of data across members
+ - Inputs: Connect the input components such as filters, checkboxes, and other interactive objects.
+ - Fix: Check for errors and debug
+ - Smooth: Assign issues of functionality to responsible members
 
 Goal: Working interactive dashboard without bugs
 
 ### Week 4 -
 Deploy, Testing, and Presentation
- - Conduct user testing
- - Refine aesthetics and layout
- - Gather feedback from peers
- - Publish final dashboard and present results
+ - Test: Conduct user testing 
+ - Polish: Refine aesthetics and layout
+ - Review: Gather feedback from peers
+ - Deploy: Host dash on Shiny or other server
+ - Publish: Publish final dashboard and present the results
 
-Goal: Polished, published dashboard ready for
-presentation
+Goal: Polished, published dashboard ready for presentation
 
 ## Data Biography
-### *Dataset: U.S. Census Bureau American Community Survey (ACS) Table B25070*
-Our main dataset is Table B25070: "Gross Rent as a Percentage of Household Income in the Past 12 Months" from the 2023 ACS 5-Year Estimates. This table comes from the Census Bureau's biggest ongoing survey of American households, collecting detailed information about people, economics, and housing from over 3.5 million addresses every year. The American Community Survey replaced part of the census in 2010 and gives us the most current detailed picture of America's changing population and housing. The 5-year estimates combine data from 2019-2023, which gives us reliable data even for smaller areas and groups. Unlike 1-year estimates, 5-year data is more stable and less variable, making it perfect for comparing states.
 
-## Understanding Table B25070:
-This table measures "gross rent" as a share of household income. Gross rent includes:
- - Contract rent (the amount paid to the landlord)
- - Utilities (electricity, gas, water, sewer)
- - Fuels (oil, coal, kerosene, wood)
+The main data sets we collected were the employed persons by detailed occupation and age from the Bureau of Labor Statistics. A secondary data set was collected on unemployment from the same source. These data sets have the purpose of informing decisions regarding labor or giving evidence to support policies. The data was collected by the American government, by the agency of Bureau of Labor Statistics under the United States Department of Labor. For the 2024 employed persons dataset, 161,346 observations are present, with the observations representing numbers in thousands.  
+ 
+The collection methods for these data sets are explicitly mentioned in their [Handbook of Methods](https://www.bls.gov/opub/hom/about.htm) section on their website. However, for a brief summary of these methods, the Bureau of Labor Statistics surveys businesses and agencies, then receives lists of employees or job titles provided. As well as utilizes as much public information conducted from these surveys as well as census, government and private data. This has impacts on managers, analysts, and government officials. The public nature helps management occupations better understand the state of occupations and age ranges.  
+ 
+This then lets management teams have a more informed idea of the teams they wish to create or keep using the public data in their decisions in cultivating the overall make up of their workforce. Analysts on the other hand will be able to discover information on the trend of occupations and age, allowing them to create observations and study this data which will then be utilized in things such as reports to that very management previously discussed. While government officials could use these analyses on occupation and age data to be better informed when proposing policies that affect the make up of the industries these occupations are situated in.  
+ 
+These data sets are all summarized data from another source, as they are all tables of counts. Known limitations here are that they may have under or over- representation. Occupation categories could also be too general and cover very different fields. There is missing data in the data sets  in the median age column, represented by dashes. There are accessible notes at the bottom to explain what median age means and the dash (“-”) indicates that there is no data. There are quite a bit of papers specifically on the data taken from theUS Bureau of Labor and Statistics. 
+ 
+Research Papers: 
+[https://www.bls.gov/osmr/research-papers/]  
 
-The table breaks down renters into categories based on what percentage of their household income goes toward these costs:
- - Less than 10%
- - 10.0 to 14.9%
- - 15.0 to 19.9%
- - 20.0 to 24.9%
- - 25.0 to 29.9%
- - 30.0 to 34.9%
- - 35.0 to 39.9%
- - 40.0 to 49.9%
- - 50.0% or more
- - Not computed (includes households with no income or negative income)
 
-The 30% threshold has been the federal standard for housing affordability since 1981, set by HUD. Households paying more than 30% of income on housing are considered "cost-burdened" because they may struggle to afford other necessities like food, healthcare, and transportation. Those paying 50% or more are "severely cost-burdened."
+### *Dataset: *
 
+The data source that we will be using is from the U.S. Bureau of Labor Statistics for Labor Force, we will be looking at the annual average years from 2011 to 2024 dataset of 11b. Employed persons by detailed occupation and age. This range attempts to capture the different trends of more than a decade of labor market dynamics from the Great Recession recovery, COVID-19, and now the current labor market restructuring. The dataset is split between management/professional occupations and service occupations, spanning over 300 occupations combined, each is a table. 
+ 
+Data Source Links: 
+U.S. Bureau of Labor Statistics for Labor Force Dataset [Link](https://www.bls.gov/cps/tables.htm#otheryears) 
+U.S. Bureau of Labor Statistics for Labor Force Dataset [PDF](https://www.bls.gov/cps/cpsa2024.pdf) 
+
+
+## Understanding Table Organization :
+*Details*
+
+Example Table(s): 
+Employed persons by detailed occupation and age [2023](https://www.bls.gov/cps/data/aa2023/cpsaat11b.htm) 
+Employed persons by detailed occupation and age [2024](https://www.bls.gov/cps/aa2014/cpsaat11.htm) 
 
 ## Data Accessibility and Quality:
-The ACS data is available to everyone through several sources:
- - Census Bureau's data.census.gov website
- - Census Reporter (censusreporter.org) - provides user-friendly tables and visualizations
- - (tidycensus)[https://cran.r-project.org/web/packages/tidycensus/index.html] R package - allows direct access for research
-The data includes margins of error for all numbers, so researchers can check how reliable the data is. For state-level analysis, the 5-year estimates have good sample sizes with relatively small margins of error.
+*Details for accessing the data*
 
 ## Historical Context
-Rent burden has been a growing concern since the 1960s but has gotten worse since 2000. Key factors include:
- - Wages staying flat for low and middle-income workers
- - Rising construction costs and restrictive zoning laws limiting housing supply
- - More demand in cities where jobs are concentrated
- - Less federal funding for affordable housing programs
- - After the 2008 foreclosure crisis, many owner-occupied homes became rentals
-
-## Geographic Patterns
-Early research suggests rent burden is highest in:
- - Coastal cities (California, New York, Florida)
- - Tourism areas with limited year-round housing
- - Areas with rapid population growth outpacing new housing
- - States with high living costs but service-sector wages
-On the other hand, states in the Midwest and some Southern regions tend to show lower rent burdens because housing costs less compared to incomes.
+*Details*
 
 ## Limitations
-While thorough, the ACS data has some limits:
- - Sampling error: Smaller groups may have wider margins of error
- - Missing data: Some households don't report income, listed as "not computed"
- - Scope: Data only covers renters, not homeowners with mortgages
- - Timeliness: 5-year estimates are several years behind current conditions
- - Self-reporting: Data relies on survey responses, which may have reporting bias
-
-Despite these limits, the ACS is still the best source for housing affordability research and is used by HUD, researchers, and policy organizations nationwide.
+*Details*
 
 ## Additional Data Sources 
-To provide more context, we may include: HUD Fair Market Rent data, Bureau of Labor Statistics wage data by state, State-level cost of living measures, and Population and demographic information from other ACS tables.
+*Details*
 
 ## Sources
-* Census tabulation detail: Gross Rent as a percentage of household income. Census Reporter.(n.d.). [https://censusreporter.org/tables/B25070/]
-* Consolidated Planning/CHAS Data | HUD USER. (n.d.). [https://www.huduser.gov/portal/datasets/cp.html]
-* U.S. Census Bureau. (2023). American Community Survey 5-Year Estimates, Table B25070: Gross Rent as a Percentage of Household Income in the Past 12 Months. Retrieved from [https://data.census.gov]
-* U.S. Department of Housing and Urban Development. (n.d.). Affordable Housing. [https://www.hud.gov/program_offices/comm_planning/affordablehousing/]
-* Walker K, Herman M (2025). tidycensus: Load US Census Boundary and Attribute Data as 'tidyverse' and 'sf'-Ready Data Frames. R package version 1.7.3, [https://github.com/walkerke/tidycensus].
+Bureau of Labor Statistics. (2025, May). Labor Force Statistics from the Current Population Survey [Table Set](https://www.bls.gov/cps/tables.htm#otheryears). Current Population Survey, 2014 through 2024. U.S. Department of Labor. [https://www.bls.gov/cps/tables.htm#otheryears](https://www.bls.gov/cps/tables.htm#otheryears ) 
+
