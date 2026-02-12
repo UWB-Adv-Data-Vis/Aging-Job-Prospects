@@ -8,10 +8,10 @@ The data dashboard challenge for the Winter 2026 BDATA 412 Advanced Data Visuali
 -   📊 Challenge created by and made for the BDATA 412 [Advanced Data Visualization](https://github.com/UWB-Adv-Data-Vis) course at the [University of Washington Bothell](https://www.uwb.edu/).
 
 -   ✍️ Authored by [Eric H. K.](https://github.com/EricKim117), [Richard J.](https://github.com/), [Minh T.](https://github.com/), and [Sean N.](https://github.com/sn2050-commits).
-
 -   🔍 Challenge review committee: [Sophia W.](https://github.com/sophiawalters) (Chair), [Nikolai D.](https://github.com/NikolaiDecneut), [Aiden W.](https://github.com/aidenwal21), [Jeffery C.] , [Debbie]
-
 -   🛠️ Edited and supervised by Prof. [Caleb Trujillo](https://github.com/calebtru).
+
+
 ### Learning Objectives
 In this assignment you will demonstrate your ability to:
 
@@ -30,13 +30,16 @@ This data challenge directly addresses the concerns of the future labor market i
 The dashboard is intended to clearly present occupational employment trends by age and to provide insights into historical patterns, structural shifts, industry trends, and automation impacts, helping to inform policymakers and analysts through evidence-based decision-making. It functions as a supplemental resource to enable users to compare the different occupation performance across age groups.
 
 ## Data Challenge Statement
+
 This challenge asks teams to turn complex labor data into a clear, easy-to-use dashboard using R Shiny and ggplot2. We intend the dashboards to be accessible and understandable to the general public, prioritizing creative layouts, clear labeling, and clear data storytelling so that it enables non-technical users to engage with the visualizations meaningfully. By making the dashboard easily accessible to the public, it will provide a good reference for students or any public stakeholders trying to understand the trends of labor markets. 
 
 ### Why This Challenge Matters:
+
 These employment numbers helps users to identify emerging trends and risks in different age groups while helping to develop better policy interventions, economic planning, and potential workforce incentives strategies. 
 
 ### What We Hope to Learn:
-The dashboard will help users explore the data and find information. Users should be able to quickly see which states have the biggest rent problems, understand regional patterns, and see how inequality shows up in housing costs. The dashboard will show patterns in the data while giving enough background for users to understand housing affordability in different areas.
+
+The dashboard will help users explore the data and find information. Users should be able to quickly see which occupations have the entering age groups, retiring agegroups, and see how does occupation inequality shows up in generational changes.
 
 ## Purpose 
 
@@ -44,7 +47,7 @@ Inform stakeholders to navigate the job market and mangage expectations for care
 We aim to make complex labor force data clear and accessible through interactive visuals, helping users understand workforce entry, peak years, retirement patterns, and generational job prospects.
 
 ## Stakeholders:
- - Policymakers and city planners working on housing policies
+ - Policymakers and city planners
  - Economists and researchers studying income inequality and cost of living
  - Non-profit groups and workforce advocates
  - Students and the general public interested in social issues and job markey
@@ -53,12 +56,14 @@ We aim to make complex labor force data clear and accessible through interactive
 ## Targeted Questions for Visual Analytics
 
 The dashboard _could_ answer these key questions through visuals:
+
  1.	What are the entry age groups for different occupations?
  2.	Peak years for occupations? Peak being defined as salary earned to hours worked
  3.	Retirement years for occupations?
  4.	Unemployment by occupation and unemployment?
  6.	Is gen-z screwed with their employment opportunities in the current job market?
- 7.	Which generation(s) are projected to never retire? 
+ 7.	Which generation(s) are projected to never retire?
+ 8.	How do these changes affect different social identities (e.g. race, ethnicity, gender)?
 
 ## Design Principles:
  - Simplify: Keep it simple but informative: focus on 1-2 strong visualizations per person.
@@ -68,6 +73,47 @@ The dashboard _could_ answer these key questions through visuals:
  - Flexible: Works on different screen sizes including desktops, phones, tablets, and laptops.
  - Understandable: Follow ggplot2 best practices
  - **_Please replace this README with one for your produced dashboard and include a link to the original challenge._**
+
+
+## The data
+### Data Biography
+
+The main data sets we collected were the employed persons by detailed occupation and age from the Bureau of Labor Statistics. A secondary data set was collected on unemployment from the same source. These data sets have the purpose of informing decisions regarding labor or giving evidence to support policies. The data was collected by the American government, by the agency of Bureau of Labor Statistics under the United States Department of Labor. For the 2024 employed persons dataset, 161,346 observations are present, with the observations representing numbers in thousands.  
+ 
+The collection methods for these data sets are explicitly mentioned in their [Handbook of Methods](https://www.bls.gov/opub/hom/about.htm) section on their website. However, for a brief summary of these methods, the Bureau of Labor Statistics surveys businesses and agencies, then receives lists of employees or job titles provided. As well as utilizes as much public information conducted from these surveys as well as census, government and private data. This has impacts on managers, analysts, and government officials. The public nature helps management occupations better understand the state of occupations and age ranges.  
+ 
+This then lets management teams have a more informed idea of the teams they wish to create or keep using the public data in their decisions in cultivating the overall make up of their workforce. Analysts on the other hand will be able to discover information on the trend of occupations and age, allowing them to create observations and study this data which will then be utilized in things such as reports to that very management previously discussed. While government officials could use these analyses on occupation and age data to be better informed when proposing policies that affect the make up of the industries these occupations are situated in.  
+ 
+These data sets are all summarized data from another source, as they are all tables of counts. Known limitations here are that they may have under or over- representation. Occupation categories could also be too general and cover very different fields. There is missing data in the data sets  in the median age column, represented by dashes. There are accessible notes at the bottom to explain what median age means and the dash (“-”) indicates that there is no data. There are quite a bit of papers specifically on the data taken from theUS Bureau of Labor and Statistics. 
+ 
+Research Papers: 
+[https://www.bls.gov/osmr/research-papers/](https://www.bls.gov/osmr/research-papers/)  
+
+
+### Dataset details:
+
+The data source that we will be using is from the U.S. Bureau of Labor Statistics for Labor Force, we will be looking at the annual average years from 2011 to 2024 dataset of 11b. Employed persons by detailed occupation and age. This range attempts to capture the different trends of more than a decade of labor market dynamics from the Great Recession recovery, COVID-19, and now the current labor market restructuring. The dataset is split between management/professional occupations and service occupations, spanning over 300 occupations combined, each is a table. 
+ 
+Data Source Links: 
+
+ - U.S. Bureau of Labor Statistics for Labor Force Dataset [Link](https://www.bls.gov/cps/tables.htm#otheryears) 
+ - U.S. Bureau of Labor Statistics for Labor Force Dataset [PDF](https://www.bls.gov/cps/cpsa2024.pdf)
+ - Consider using a R package like blscrapeR, blsAPI, BLSloadR to avoid limitations related to multiple sheets and large data storage.
+
+### Understanding Table Organization :
+
+Example Table(s): 
+ - Employed persons by detailed occupation and age [2023](https://www.bls.gov/cps/data/aa2023/cpsaat11b.htm) 
+ - Employed persons by detailed occupation and age [2024](https://www.bls.gov/cps/aa2014/cpsaat11.htm) 
+
+### Data Accessibility and Quality:
+This is a bit more accessible in terms of data retrieval specifically where the data sources are:
+
+- CPS (Current Population Survey, what is mostly going to be used)
+[https://www.bls.gov/cps/data.htm](https://www.bls.gov/cps/data.htm) 
+- Other sources (Aiding in the objectives of the dashboard, Demographic Data Sources, etc)
+[https://www.bls.gov/data/apps.htm](https://www.bls.gov/data/apps.htm)
+
 
 ## Project Plan:
 Week-phase planned tasks with goals are listed.
@@ -122,48 +168,6 @@ Deploy, Testing, and Presentation
  - Publish: Publish final dashboard and present the results
 
 Goal: Polished, published dashboard ready for presentation
-
-## Data Biography
-
-The main data sets we collected were the employed persons by detailed occupation and age from the Bureau of Labor Statistics. A secondary data set was collected on unemployment from the same source. These data sets have the purpose of informing decisions regarding labor or giving evidence to support policies. The data was collected by the American government, by the agency of Bureau of Labor Statistics under the United States Department of Labor. For the 2024 employed persons dataset, 161,346 observations are present, with the observations representing numbers in thousands.  
- 
-The collection methods for these data sets are explicitly mentioned in their [Handbook of Methods](https://www.bls.gov/opub/hom/about.htm) section on their website. However, for a brief summary of these methods, the Bureau of Labor Statistics surveys businesses and agencies, then receives lists of employees or job titles provided. As well as utilizes as much public information conducted from these surveys as well as census, government and private data. This has impacts on managers, analysts, and government officials. The public nature helps management occupations better understand the state of occupations and age ranges.  
- 
-This then lets management teams have a more informed idea of the teams they wish to create or keep using the public data in their decisions in cultivating the overall make up of their workforce. Analysts on the other hand will be able to discover information on the trend of occupations and age, allowing them to create observations and study this data which will then be utilized in things such as reports to that very management previously discussed. While government officials could use these analyses on occupation and age data to be better informed when proposing policies that affect the make up of the industries these occupations are situated in.  
- 
-These data sets are all summarized data from another source, as they are all tables of counts. Known limitations here are that they may have under or over- representation. Occupation categories could also be too general and cover very different fields. There is missing data in the data sets  in the median age column, represented by dashes. There are accessible notes at the bottom to explain what median age means and the dash (“-”) indicates that there is no data. There are quite a bit of papers specifically on the data taken from theUS Bureau of Labor and Statistics. 
- 
-Research Papers: 
-[https://www.bls.gov/osmr/research-papers/](https://www.bls.gov/osmr/research-papers/)  
-
-
-### Dataset:
-
-The data source that we will be using is from the U.S. Bureau of Labor Statistics for Labor Force, we will be looking at the annual average years from 2011 to 2024 dataset of 11b. Employed persons by detailed occupation and age. This range attempts to capture the different trends of more than a decade of labor market dynamics from the Great Recession recovery, COVID-19, and now the current labor market restructuring. The dataset is split between management/professional occupations and service occupations, spanning over 300 occupations combined, each is a table. 
- 
-Data Source Links: 
-U.S. Bureau of Labor Statistics for Labor Force Dataset [Link](https://www.bls.gov/cps/tables.htm#otheryears) 
-U.S. Bureau of Labor Statistics for Labor Force Dataset [PDF](https://www.bls.gov/cps/cpsa2024.pdf) 
-
-
-## Understanding Table Organization :
-*Details*
-
-Example Table(s): 
-Employed persons by detailed occupation and age [2023](https://www.bls.gov/cps/data/aa2023/cpsaat11b.htm) 
-Employed persons by detailed occupation and age [2024](https://www.bls.gov/cps/aa2014/cpsaat11.htm) 
-
-## Data Accessibility and Quality:
-*Details for accessing the data*
-
-## Historical Context
-*Details*
-
-## Limitations
-*Details*
-
-## Additional Data Sources 
-*Details*
 
 ## Sources
 Bureau of Labor Statistics. (2025, May). Labor Force Statistics from the Current Population Survey [Table Set](https://www.bls.gov/cps/tables.htm#otheryears). Current Population Survey, 2014 through 2024. U.S. Department of Labor. [https://www.bls.gov/cps/tables.htm#otheryears](https://www.bls.gov/cps/tables.htm#otheryears ) 
