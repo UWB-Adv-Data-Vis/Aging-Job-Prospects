@@ -40,14 +40,15 @@ The dashboard will help users explore the data and find information. Users shoul
 
 ## Purpose 
 
-
+Inform stakeholders to navigate the job market and mangage expectations for career prospects in different occupations.
+We aim to make complex labor force data clear and accessible through interactive visuals, helping users understand workforce entry, peak years, retirement patterns, and generational job prospects.
 
 ## Stakeholders:
  - Policymakers and city planners working on housing policies
  - Economists and researchers studying income inequality and cost of living
- - Non-profit groups and housing advocates
- - Students and the general public interested in social issues
- - Real estate professionals
+ - Non-profit groups and workforce advocates
+ - Students and the general public interested in social issues and job markey
+ - Recruiters and hiring professionals
 
 ## Targeted Questions for Visual Analytics
 
@@ -80,15 +81,16 @@ Design, Ideation, and Planning
  - Prepare: Search for R packages to preprocess/tidy data into a useful format  
  - Ideation: Brainstorm research questions
  - Design: Sketch dashboard layout onto paper
- - Assign: Set goals related for members contribute between class.
+ - Assign: Set goals related for members contribute between class
 
-Goal: Finalized dataset, clear dashboard objectives, achievable member-specific tasks assigned. 
+Goal: Finalized dataset, clear dashboard objectives, achievable member-specific tasks assigned 
 
 ### Week 2 –
 Prototype, Testing, Concepts
  - Orient: Revisit group commits and branches, merge and update issues as necessary.
  - Wrangle: Performing necessary cleaning and refining of the data.
- - Analysis: Conduct a first layer of analysis as needed.Visualize: Create first draft visuals (ggplot charts, tables), each member is accountable for an original creation.
+ - Analysis: Conduct a first layer of analysis as needed.
+ - Visualize: Create first draft visuals (ggplot charts, tables), each member is accountable for an original creation.
  - Evaluate: Judge the overall accessibility of the rough drafts
  - Discuss: Get feedback from peers
  - Compare: Consider alternative and creative visualization options
